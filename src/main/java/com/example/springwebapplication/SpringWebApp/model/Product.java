@@ -2,12 +2,16 @@ package com.example.springwebapplication.SpringWebApp.model;
 
 
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 import org.springframework.stereotype.Component;
 
 
 @Component
+@Entity
 public class Product {
 
+    @Id
     public int id;
     public String name;
     public double price;
